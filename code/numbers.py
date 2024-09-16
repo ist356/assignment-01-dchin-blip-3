@@ -11,4 +11,18 @@ For example, if the input is:
 The output should be:
 {'odd': [3, 5], 'even': [2, 4, 6]}
 '''
-#test
+dict = {"odd":None, "even":None}
+odd = []
+even = []
+
+while True:
+    entry = int(input("Number: "))
+    if entry == 0:
+        break
+    if entry % 2 == 1:
+        odd.append(entry)
+    else:
+        even.append(entry)
+dict["odd"] = odd
+dict["even"] = even
+print(dict)
